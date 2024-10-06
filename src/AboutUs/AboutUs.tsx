@@ -7,7 +7,6 @@ import {
   Container,
   Stack,
 } from "@mui/material";
-import sfoImg from "../Assets/images/sfo.jpeg";
 import freshImg from "../Assets/images/fresh.jpeg";
 import hydImg from "../Assets/images/hyd.jpeg";
 const AboutUs = () => {

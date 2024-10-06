@@ -1,9 +1,6 @@
 import {
-  Button,
   Card,
-  CardActions,
   CardContent,
-  CardMedia,
   Container,
   Divider,
   Stack,
@@ -43,6 +40,7 @@ export default function Contact() {
                   </div>
                   <Divider />
                   <iframe
+                    title="map"
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6342.42621390708!2d-122.02603849999998!3d37.3611341!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb670b182dce1%3A0xe5beb593c8285a97!2s594%20E%20El%20Camino%20Real%2C%20Sunnyvale%2C%20CA%2094087!5e0!3m2!1sen!2sus!4v1728144817724!5m2!1sen!2sus"
                     width="400"
                     height="250"

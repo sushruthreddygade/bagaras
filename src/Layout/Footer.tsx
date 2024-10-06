@@ -1,17 +1,11 @@
-import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import {
-  BottomNavigation,
-  BottomNavigationAction,
   Card,
   CardContent,
-  Divider,
   Link,
   Stack,
   Typography,
 } from "@mui/material";
-import * as React from "react";
-import { Facebook, Instagram, LinkedIn, LocationOn } from "@mui/icons-material";
 import instaImg from "../Assets/images/Instagram_icon.png";
 import fbImg from "../Assets/images/fb.png";
 const Footer = () => {

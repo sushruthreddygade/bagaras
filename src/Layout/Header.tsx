@@ -5,8 +5,7 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import { Card, CardContent, CardMedia, useColorScheme } from "@mui/material";
-import { useNavigate } from "react-router-dom";
+import { Card, CardContent, useColorScheme } from "@mui/material";
 import bagarasLogo from "../Assets/images/bagaras.jpeg";
 import { LocationOn } from "@mui/icons-material";
 import Link from "@mui/material/Link";
@@ -14,26 +13,27 @@ import Link from "@mui/material/Link";
 const pages: string[] = ["about us", "contact"];
 
 function Header() {
-  const navigate = useNavigate();
+  // eslint-disable-next-line
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
     null
   );
+  // eslint-disable-next-line
   const [anchorElUser, setAnchorElUser] = React.useState<null | HTMLElement>(
     null
   );
 
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-    setAnchorElUser(event.currentTarget);
-  };
+  // const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+  //   setAnchorElNav(event.currentTarget);
+  // };
+  // const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
+  //   setAnchorElUser(event.currentTarget);
+  // };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
   };
 
-  const { mode, setMode } = useColorScheme();
+  const { mode } = useColorScheme();
   if (!mode) {
     return null;
   }
