@@ -23,18 +23,18 @@ const theme = createTheme({
       dark: {
         palette: {
           primary: {
-            main: "#20141e",
+            main:  "#ffffff",
           },
           secondary: {
-            main: "#20141e",
+            main:  "#ffffff",
           },
           background: {
             default: "#000000",
             paper: "#20141e",
           },
           text: {
-            primary: '#ffffff',
-            secondary: grey[300],
+            primary: "#ffffff",
+            secondary:  "#ffffff",
           },
         },
       },
