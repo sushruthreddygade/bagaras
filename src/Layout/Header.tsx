@@ -5,12 +5,25 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import { Card, CardContent, useColorScheme } from "@mui/material";
+import {
+  Card,
+  CardContent,
+  IconButton,
+  Menu,
+  MenuItem,
+  Stack,
+  useColorScheme,
+} from "@mui/material";
 import bagarasLogo from "../Assets/images/bagaras.jpeg";
 import { LocationOn } from "@mui/icons-material";
+import { Menu as MenuIcon } from "@mui/icons-material";
 import Link from "@mui/material/Link";
 
-const pages: string[] = ["about us", "contact"];
+import instaImg from "../Assets/images/Instagram_icon.png";
+import fbImg from "../Assets/images/fb.png";
+
+const pages: string[] = ["menu", "catering", "order now", "contact"];
+const mobilePages: string[] = ["home", "menu", "catering", "order now", "contact"];
 
 function Header() {
   // eslint-disable-next-line
@@ -22,12 +35,12 @@ function Header() {
     null
   );
 
-  // const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
-  //   setAnchorElNav(event.currentTarget);
-  // };
-  // const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
-  //   setAnchorElUser(event.currentTarget);
-  // };
+  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElNav(event.currentTarget);
+  };
+  const handleOpenUserMenu = (event: React.MouseEvent<HTMLElement>) => {
+    setAnchorElUser(event.currentTarget);
+  };
 
   const handleCloseNavMenu = () => {
     setAnchorElNav(null);
@@ -40,7 +53,7 @@ function Header() {
 
   return (
     <div style={{ marginBottom: "9em" }}>
-      <AppBar position="fixed"> 
+      <AppBar position="fixed" sx={{ backgroundColor: "#20141e" }}>
         <Container maxWidth="xl">
           <Toolbar disableGutters data-testid="app-toolbar">
             <Typography
@@ -60,15 +73,16 @@ function Header() {
             >
               <img src={bagarasLogo} alt="logo" width={100} height={80} />
             </Typography>
-            {/* <Box
+            <Box
               sx={{
                 flexGrow: 1,
-                display: { xs: "flex", md: "none", marginLeft: "2em" },
+                display: { xs: "flex", md: "none" },
+                maxWidth: { xs: "100%", md: "50%" },
               }}
             >
               <IconButton
                 size="large"
-                aria-label="account of current user"
+                aria-label="menu"
                 aria-controls="menu-appbar"
                 aria-haspopup="true"
                 onClick={handleOpenNavMenu}
@@ -91,18 +105,27 @@ function Header() {
                 open={Boolean(anchorElNav)}
                 onClose={handleCloseNavMenu}
                 sx={{ display: { xs: "block", md: "none" } }}
+                color="#20141e"
               >
-                {pages.map((page) => (
-                  <MenuItem
-                    key={page}
-                    href={`/${page.trim().replace(" ", "-")}`}
-                    onClick={handleCloseNavMenu}
-                  >
-                    <Typography sx={{ textAlign: "center" }}>{page}</Typography>
-                  </MenuItem>
+                {mobilePages.map((page) => (
+                  <a href={`/${page.trim().replace(" ", "-")}`}>
+                    <MenuItem
+                      key={page}
+                      onClick={handleCloseNavMenu}
+                      sx={{
+                        textDecoration: "none",
+                        color: "white",
+                        backgroundColor: "#20141e",
+                      }}
+                    >
+                      <Typography sx={{ textAlign: "center" }}>
+                        {page}
+                      </Typography>
+                    </MenuItem>
+                  </a>
                 ))}
               </Menu>
-            </Box> */}
+            </Box>
             <Typography
               variant="h5"
               noWrap
@@ -121,6 +144,7 @@ function Header() {
             >
               <img src={bagarasLogo} alt="logo" width={160} height={120} />
             </Typography>
+            {/* Following code is for the desktop menu items */}
             <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
               {pages.map((page) => (
                 <Button
@@ -137,7 +161,7 @@ function Header() {
                 </Button>
               ))}
             </Box>
-            
+
             <Box
               sx={{
                 flexGrow: 1,
@@ -147,11 +171,37 @@ function Header() {
                 position: "relative",
               }}
             >
-              <Link onClick={handleCloseNavMenu} href={`/order-now`}>
-                <Typography sx={{ textAlign: "center", color: "#C0C0C0" }}>
-                  ORDER NOW
+              <Stack direction="row" spacing={2}>
+                <Typography
+                  variant="body1"
+                  component="p"
+                  sx={{
+                    color: "#20141e",
+                    textAlign: "center",
+                  }}
+                >
+                  <Link href="https://www.instagram.com/bagarasca/profilecard/?igsh=NTc4MTIwNjQ2YQ%3D%3D">
+                    <img
+                      src={instaImg}
+                      width={30}
+                      height={30}
+                      alt="instagram"
+                    />
+                  </Link>
                 </Typography>
-              </Link>
+                <Typography
+                  variant="body1"
+                  component="p"
+                  sx={{
+                    color: "#20141e",
+                    textAlign: "center",
+                  }}
+                >
+                  <Link href="https://www.facebook.com/people/Bagaras/61565510966244/?mibextid=7B2xQ4">
+                    <img src={fbImg} width={30} height={30} alt="facebook" />
+                  </Link>
+                </Typography>
+              </Stack>
             </Box>
           </Toolbar>
         </Container>
@@ -169,8 +219,8 @@ function Header() {
                 <LocationOn sx={{ marginRight: "8px" }} />
               </Link>
               <Link href="https://maps.app.goo.gl/TX71JhDMXHc4dnvC7">
-                <Typography component="div" variant="subtitle2">
-                  Grand Opening on Oct 18, 2024
+                <Typography component="div" variant="subtitle1">
+                  Grand Opening on Oct 25, 2024
                 </Typography>
               </Link>
             </CardContent>

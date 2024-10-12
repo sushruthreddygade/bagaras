@@ -5,9 +5,10 @@ import { ThemeProvider } from "@mui/material/styles";
 import Home from "./Home/Home";
 import theme from "./Theme";
 import Stack from "@mui/material/Stack";
-import AboutUs from "./AboutUs/AboutUs";
 import OrderNow from "./OrderNow/OrderNow";
 import Contact from "./Contact/Contact";
+import Menu from "./Menu/Menu";
+import Catering from "./Menu/Catering";
 
 const App = () => {
   return (
@@ -28,8 +29,11 @@ const App = () => {
           <section>
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/about-us" element={<AboutUs />} />
+              <Route path="/home" element={<Home />} />
+              {/* <Route path="/about-us" element={<AboutUs />} /> */}
               <Route path="/contact" element={<Contact />} />
+              <Route path="/menu" element={<Menu />} />
+              <Route path="/catering" element={<Catering />} />
               <Route path="/order-now" element={<OrderNow />} />
             </Routes>
           </section>
