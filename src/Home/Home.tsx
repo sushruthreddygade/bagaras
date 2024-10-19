@@ -53,7 +53,7 @@ const Home = () => {
                         color: "#20141e",
                       }}
                     >
-                      Bay Area Techies & Hyderabadi Chefs
+                      Bay Area Foodies & Hyderabadi Chefs
                     </Typography>
                     <Typography
                       variant="subtitle1"
@@ -258,7 +258,7 @@ const Home = () => {
                     component="div"
                     color="#20141e"
                   >
-                    Bay Area Techies & Hyderabadi Chefs
+                    Bay Area Foodies & Hyderabadi Chefs
                   </Typography>
                   <Typography
                     variant="body1"

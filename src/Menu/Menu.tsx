@@ -121,7 +121,7 @@ const Menu = () => {
               minHeight="10vh"
             >
               <Stack spacing={3} direction={{ xs: "column", sm: "column" }}>
-                <Typography variant="h5" color="#20141e">
+                <Typography variant="h5" sx={{ minWidth: '4em'}} color="#20141e">
                   {selectedCategory}
                 </Typography>
                 <Divider />
@@ -136,7 +136,7 @@ const Menu = () => {
                       <Typography variant="h6" color="#20141e">
                         {item.name}
                       </Typography>
-                      <Typography variant="h5" color="#20141e">
+                      <Typography variant="h5" sx={{ minWidth: '4em'}} color="#20141e">
                         $ {item.price}
                       </Typography>
                     </Stack>
@@ -149,10 +149,10 @@ const Menu = () => {
                       direction={{ xs: "row", sm: "row" }}
                       sx={{ justifyContent: "space-between", margin: "1em" }}
                     >
-                      <Typography variant="h6" color="#20141e">
+                      <Typography variant="h6"  color="#20141e">
                         {item.name}
                       </Typography>
-                      <Typography variant="h5" color="#20141e">
+                      <Typography variant="h5" sx={{ minWidth: '4em'}}  color="#20141e">
                         $ {item.price}
                       </Typography>
                     </Stack>
@@ -165,10 +165,10 @@ const Menu = () => {
                       direction={{ xs: "row", sm: "row" }}
                       sx={{ justifyContent: "space-between", margin: "1em" }}
                     >
-                      <Typography variant="h6" color="#20141e">
+                      <Typography variant="h6"  color="#20141e">
                         {item.name}
                       </Typography>
-                      <Typography variant="h5" color="#20141e">
+                      <Typography variant="h5" sx={{ minWidth: '4em'}} color="#20141e">
                         $ {item.price}
                       </Typography>
                     </Stack>
@@ -181,10 +181,10 @@ const Menu = () => {
                       direction={{ xs: "row", sm: "row" }}
                       sx={{ justifyContent: "space-between", margin: "1em" }}
                     >
-                      <Typography variant="h6" color="#20141e">
+                      <Typography variant="h6"  color="#20141e">
                         {item.name}
                       </Typography>
-                      <Typography variant="h5" color="#20141e">
+                      <Typography variant="h5" sx={{ minWidth: '4em'}} color="#20141e">
                         $ {item.price}
                       </Typography>
                     </Stack>
@@ -197,10 +197,10 @@ const Menu = () => {
                       direction={{ xs: "row", sm: "row" }}
                       sx={{ justifyContent: "space-between", margin: "1em" }}
                     >
-                      <Typography variant="h6" color="#20141e">
+                      <Typography variant="h6"  color="#20141e">
                         {item.name}
                       </Typography>
-                      <Typography variant="h5" color="#20141e">
+                      <Typography variant="h5" sx={{ minWidth: '4em'}} color="#20141e">
                         $ {item.price}
                       </Typography>
                     </Stack>
@@ -213,10 +213,10 @@ const Menu = () => {
                       direction={{ xs: "row", sm: "row" }}
                       sx={{ justifyContent: "space-between", margin: "1em" }}
                     >
-                      <Typography variant="h6" color="#20141e">
+                      <Typography variant="h6"  color="#20141e">
                         {item.name}
                       </Typography>
-                      <Typography variant="h5" color="#20141e">
+                      <Typography variant="h5" sx={{ minWidth: '4em'}} color="#20141e">
                         $ {item.price}
                       </Typography>
                     </Stack>
@@ -229,10 +229,10 @@ const Menu = () => {
                       direction={{ xs: "row", sm: "row" }}
                       sx={{ justifyContent: "space-between", margin: "1em" }}
                     >
-                      <Typography variant="h6" color="#20141e">
+                      <Typography variant="h6"  color="#20141e">
                         {item.name}
                       </Typography>
-                      <Typography variant="h5" color="#20141e">
+                      <Typography variant="h5" sx={{ minWidth: '4em'}} color="#20141e">
                         $ {item.price}
                       </Typography>
                     </Stack>
@@ -245,10 +245,10 @@ const Menu = () => {
                       direction={{ xs: "row", sm: "row" }}
                       sx={{ justifyContent: "space-between", margin: "1em" }}
                     >
-                      <Typography variant="h6" color="#20141e">
+                      <Typography variant="h6"  color="#20141e">
                         {item.name}
                       </Typography>
-                      <Typography variant="h5" color="#20141e">
+                      <Typography variant="h5" sx={{ minWidth: '4em'}} color="#20141e">
                         $ {item.price}
                       </Typography>
                     </Stack>
@@ -261,10 +261,10 @@ const Menu = () => {
                       direction={{ xs: "row", sm: "row" }}
                       sx={{ justifyContent: "space-between", margin: "1em" }}
                     >
-                      <Typography variant="h6" color="#20141e">
+                      <Typography variant="h6"  color="#20141e">
                         {item.name}
                       </Typography>
-                      <Typography variant="h5" color="#20141e">
+                      <Typography variant="h5" sx={{ minWidth: '4em'}} color="#20141e">
                         $ {item.price}
                       </Typography>
                     </Stack>
@@ -277,10 +277,10 @@ const Menu = () => {
                       direction={{ xs: "row", sm: "row" }}
                       sx={{ justifyContent: "space-between", margin: "1em" }}
                     >
-                      <Typography variant="h6" color="#20141e">
+                      <Typography variant="h6"  color="#20141e">
                         {item.name}
                       </Typography>
-                      <Typography variant="h5" color="#20141e">
+                      <Typography variant="h5" sx={{ minWidth: '4em'}} color="#20141e">
                         $ {item.price}
                       </Typography>
                     </Stack>
@@ -293,10 +293,10 @@ const Menu = () => {
                       direction={{ xs: "row", sm: "row" }}
                       sx={{ justifyContent: "space-between", margin: "1em" }}
                     >
-                      <Typography variant="h6" color="#20141e">
+                      <Typography variant="h6"  color="#20141e">
                         {item.name}
                       </Typography>
-                      <Typography variant="h5" color="#20141e">
+                      <Typography variant="h5" sx={{ minWidth: '4em'}} color="#20141e">
                         $ {item.price}
                       </Typography>
                     </Stack>
@@ -309,10 +309,10 @@ const Menu = () => {
                       direction={{ xs: "row", sm: "row" }}
                       sx={{ justifyContent: "space-between", margin: "1em" }}
                     >
-                      <Typography variant="h6" color="#20141e">
+                      <Typography variant="h6"  color="#20141e">
                         {item.name}
                       </Typography>
-                      <Typography variant="h5" color="#20141e">
+                      <Typography variant="h5" sx={{ minWidth: '4em'}} color="#20141e">
                         $ {item.price}
                       </Typography>
                     </Stack>

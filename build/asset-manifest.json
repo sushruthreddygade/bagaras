@@ -1,24 +1,26 @@
 {
   "files": {
     "main.css": "/static/css/main.4079d064.css",
-    "main.js": "/static/js/main.360bf3e6.js",
+    "main.js": "/static/js/main.56122261.js",
     "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
     "static/media/bagaras_video.mp4": "/static/media/bagaras_video.683c0b2a9df7f9a0d819.mp4",
     "static/media/Instagram_icon.png": "/static/media/Instagram_icon.6f676173b2c88dfb635a.png",
+    "static/media/catering.jpg": "/static/media/catering.3407233c4d0e40c431a3.jpg",
     "static/media/sfo.jpeg": "/static/media/sfo.1bea46d23cab243abe0b.jpeg",
     "static/media/hyd.jpeg": "/static/media/hyd.ce22343ef8b73b543faa.jpeg",
     "static/media/biryani.jpeg": "/static/media/biryani.f28c940951976677fdad.jpeg",
+    "static/media/menu.jpeg": "/static/media/menu.37d02d4f85384032981f.jpeg",
     "static/media/halal.png": "/static/media/halal.243f1f9362e25d288a98.png",
     "static/media/bagaras.jpeg": "/static/media/bagaras.139bd260095981b06b55.jpeg",
     "static/media/fresh.jpeg": "/static/media/fresh.a26429e6d63fada59d19.jpeg",
-    "static/media/loading.svg": "/static/media/loading.462619182a854c7cea48c9a9132ab230.svg",
+    "static/media/order_now.jpeg": "/static/media/order_now.fcfa60c4daaf3622ce93.jpeg",
     "index.html": "/index.html",
     "main.4079d064.css.map": "/static/css/main.4079d064.css.map",
-    "main.360bf3e6.js.map": "/static/js/main.360bf3e6.js.map",
+    "main.56122261.js.map": "/static/js/main.56122261.js.map",
     "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.4079d064.css",
-    "static/js/main.360bf3e6.js"
+    "static/js/main.56122261.js"
   ]
 }
