@@ -2,7 +2,7 @@
 ## Notes
 
 # bagaras
-bagaras website
+bagara's website
 
 
 ### Project Structure

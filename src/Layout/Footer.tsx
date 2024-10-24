@@ -29,7 +29,7 @@ const Footer = () => {
               }}
             >
               <Typography component="div" variant="subtitle1">
-                Bagaras © {new Date().getFullYear()} . All rights reserved.
+                Bagara's © {new Date().getFullYear()} . All rights reserved.
               </Typography>
             </CardContent>
           </Box>

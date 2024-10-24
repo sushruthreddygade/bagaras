@@ -67,9 +67,9 @@ const Home = () => {
                       }}
                     >
                       We are Hyderabadi's at heart and experienced Bay Area Big
-                      Tech software engineers, we aims to provide a unique and
+                      Tech software engineers, we aim to provide a unique and
                       authentic dining experience balancing the needs of every
-                      customer. Bagaras brings the rich culinary heritage,
+                      customer. Bagara's brings the rich culinary heritage,
                       offers a delightful array of authentic homestyle cooked
                       food. Served fresh and with utmost care, these dishes
                       showcase the vibrant flavors of the region. With a
@@ -172,7 +172,7 @@ const Home = () => {
                         marginTop: "2em",
                       }}
                     >
-                      Bagaras brings the rich culinary heritage, offers a
+                      Bagara's brings the rich culinary heritage, offers a
                       delightful array of authentic homestyle cooked food.
                       Served fresh and with utmost care, these dishes showcase
                       the vibrant flavors of the region. With a commitment to
@@ -270,9 +270,9 @@ const Home = () => {
                     }}
                   >
                     We are Hyderabadi's at heart and experienced Bay Area Big
-                    Tech software engineers, we aims to provide a unique and
+                    Tech software engineers, we aim to provide a unique and
                     authentic dining experience balancing the needs of every
-                    customer. Bagaras brings the rich culinary heritage, offers
+                    customer. Bagara's brings the rich culinary heritage, offers
                     a delightful array of authentic homestyle cooked food.
                     Served fresh and with utmost care, these dishes showcase the
                     vibrant flavors of the region. With a commitment to using
@@ -411,7 +411,7 @@ const Home = () => {
                       marginTop: "2em",
                     }}
                   >
-                    Bagaras brings the rich culinary heritage, offers a
+                    Bagara's brings the rich culinary heritage, offers a
                     delightful array of authentic homestyle cooked food. Served
                     fresh and with utmost care, these dishes showcase the
                     vibrant flavors of the region. With a commitment to using

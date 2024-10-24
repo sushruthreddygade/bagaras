@@ -18,12 +18,19 @@ import bagarasLogo from "../Assets/images/bagaras.jpeg";
 import { LocationOn } from "@mui/icons-material";
 import { Menu as MenuIcon } from "@mui/icons-material";
 import Link from "@mui/material/Link";
-
+import LocalOfferIcon from "@mui/icons-material/LocalOffer";
 import instaImg from "../Assets/images/Instagram_icon.png";
 import fbImg from "../Assets/images/fb.png";
 
-const pages: string[] = ["menu", "catering", "order now", "contact"];
-const mobilePages: string[] = ["home", "menu", "catering", "order now", "contact"];
+const pages: string[] = ["menu", "catering",  "offers", "contact"];
+const mobilePages: string[] = [
+  "home",
+  "menu",
+  "catering",
+  // "order now",
+  "offers",
+  "contact",
+];
 
 function Header() {
   // eslint-disable-next-line
@@ -104,11 +111,14 @@ function Header() {
                 }}
                 open={Boolean(anchorElNav)}
                 onClose={handleCloseNavMenu}
-                sx={{ display: { xs: "block", md: "none" } }}
+                sx={{ display: { xs: "block", md: "none" }, margin: 0 }}
                 color="#20141e"
               >
                 {mobilePages.map((page) => (
-                  <a href={`/${page.trim().replace(" ", "-")}`}>
+                  <a
+                    href={`/${page.trim().replace(" ", "-")}`}
+                    style={{ textDecoration: "none" }}
+                  >
                     <MenuItem
                       key={page}
                       onClick={handleCloseNavMenu}
@@ -180,7 +190,7 @@ function Header() {
                     textAlign: "center",
                   }}
                 >
-                  <Link href="https://www.instagram.com/bagarasca/profilecard/?igsh=NTc4MTIwNjQ2YQ%3D%3D">
+                  <Link href="https://www.instagram.com/bagaras_sunnyvale/profilecard/?igsh=MWQ1ZGUxMzBkMA%3D%3D">
                     <img
                       src={instaImg}
                       width={30}
@@ -223,6 +233,35 @@ function Header() {
                   Grand Opening on Oct 25, 2024
                 </Typography>
               </Link>
+            </CardContent>
+          </Box>
+        </Card>
+        <Card
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            padding: 0,
+            background: "orange",
+          }}
+        >
+          <Box sx={{ display: "flex", flexDirection: "row" }}>
+            <CardContent
+              sx={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+                color: "black",
+              }}
+            >
+              <Typography
+                component="div"
+                variant="subtitle1"
+                sx={{ display: "flex", direction: "row", fontStyle: "normal", fontWeight: 'bold' }}
+              >
+                <LocalOfferIcon sx={{ marginRight: "8px" }} />
+                Buy 1 Get 1 Free* (Oct 25 - 27, 2024)
+              </Typography>
             </CardContent>
           </Box>
         </Card>

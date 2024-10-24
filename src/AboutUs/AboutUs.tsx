@@ -85,7 +85,7 @@ const AboutUs = () => {
                       marginTop: "2em",
                     }}
                   >
-                    Bagaras brings the rich culinary heritage, offers a
+                    Bagara's brings the rich culinary heritage, offers a
                     delightful array of authentic homestyle cooked food. Served
                     fresh and with utmost care, these dishes showcase the
                     vibrant flavors of the region. With a commitment to using
